@@ -1,10 +1,10 @@
 //
 //  ViewController.swift
-//  tawsila
+//  Tawsila
 //
-//  Created by vikram singh charan on 9/11/17.
-//  Copyright © 2017 ScientificWebs info sol. All rights reserved.
-//
+//  Created by Dinesh Mahar on 10/06/17.
+//  Copyright © 2017 scientificweb. All rights reserved.
+//  Anil
 
 import UIKit
 
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

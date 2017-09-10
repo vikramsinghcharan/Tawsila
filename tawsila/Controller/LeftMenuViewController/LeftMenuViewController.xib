@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Black.ttf">
+            <string>Roboto-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftMenuViewController" customModule="Tawsila" customModuleProvider="target">
+            <connections>
+                <outlet property="lblUserDetail" destination="pug-ZL-Bae" id="aMw-cH-ziN"/>
+                <outlet property="tblView" destination="9qL-Nn-3NG" id="etD-of-KUW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="fej-fy-Vmz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vL3-Bv-cr3">
+                    <rect key="frame" x="0.0" y="20" width="329" height="647"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ti-HS-el4">
+                            <rect key="frame" x="0.0" y="0.0" width="329" height="149"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0ht-TB-gRH">
+                                    <rect key="frame" x="6" y="19" width="80" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Online@scientifwebs.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pug-ZL-Bae">
+                                    <rect key="frame" x="10" y="107" width="306" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="25"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homeTextImage" translatesAutoresizingMaskIntoConstraints="NO" id="u0g-qb-LZB">
+                                    <rect key="frame" x="87" y="30" width="150" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="149" id="MDh-Bq-mYh"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9qL-Nn-3NG">
+                            <rect key="frame" x="0.0" y="149" width="329" height="498"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="CBT-wd-PXn"/>
+                                <outlet property="delegate" destination="-1" id="RnE-Lk-a02"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="9qL-Nn-3NG" firstAttribute="leading" secondItem="vL3-Bv-cr3" secondAttribute="leading" id="1bN-vo-Z9N"/>
+                        <constraint firstItem="7ti-HS-el4" firstAttribute="leading" secondItem="vL3-Bv-cr3" secondAttribute="leading" id="2zb-ZP-s7q"/>
+                        <constraint firstItem="9qL-Nn-3NG" firstAttribute="top" secondItem="7ti-HS-el4" secondAttribute="bottom" id="FZJ-eO-Pah"/>
+                        <constraint firstAttribute="trailing" secondItem="7ti-HS-el4" secondAttribute="trailing" id="VXw-kU-YyD"/>
+                        <constraint firstItem="7ti-HS-el4" firstAttribute="top" secondItem="vL3-Bv-cr3" secondAttribute="top" id="Y2f-bY-fIZ"/>
+                        <constraint firstAttribute="width" secondItem="vL3-Bv-cr3" secondAttribute="height" multiplier="329:647" id="Ycz-DI-e7h"/>
+                        <constraint firstAttribute="trailing" secondItem="9qL-Nn-3NG" secondAttribute="trailing" id="hvq-Be-3qg"/>
+                        <constraint firstAttribute="bottom" secondItem="9qL-Nn-3NG" secondAttribute="bottom" id="ubM-EM-1G8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fej-fy-Vmz" secondAttribute="trailing" id="4Rq-Xe-bbP"/>
+                <constraint firstItem="vL3-Bv-cr3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="JbL-gR-E5V"/>
+                <constraint firstItem="fej-fy-Vmz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="R58-A1-d9Z"/>
+                <constraint firstItem="fej-fy-Vmz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iAJ-t8-tZe"/>
+                <constraint firstAttribute="bottom" secondItem="fej-fy-Vmz" secondAttribute="bottom" id="iDY-ek-OWC"/>
+                <constraint firstAttribute="bottom" secondItem="vL3-Bv-cr3" secondAttribute="bottom" id="lbW-Sr-IDY"/>
+                <constraint firstItem="vL3-Bv-cr3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="q0c-Lw-drC"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="homeTextImage" width="224" height="66"/>
+        <image name="logo" width="151" height="156"/>
+        <image name="splash" width="1200" height="2015"/>
+    </resources>
+</document>
